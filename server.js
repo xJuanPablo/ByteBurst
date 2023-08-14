@@ -1,5 +1,8 @@
 const express = require('express')
+const routes = require('./routes')
 const sequelize = require('./config/connection');
+
+const Users = require('./models/User')
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -7,7 +10,10 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-sequelize.sync().then(() => {
+app.use(routes)
+
+sequelize.sync({ force: false }).then(() => {
+  // { force: true } means that everytime the server starts it drops and recreates the tables
   app.listen(PORT, () => console.log('Now Listening'))
 });
 
