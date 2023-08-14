@@ -11,14 +11,33 @@ Comment.init(
       primaryKey: true,
       allowNull: true
     },
-    content: DataTypes.TEXT,
+    content:{
+      type: DataTypes.TEXT,
     allowNull: false,
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'user',  
+        key: 'id',
+      },
+    },
+    post_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'post',  
+        key: 'id',
+      }
+    }
   },
   {
   sequelize,
   modelName: 'comment',
   freezeTableName: true
-  }
+  },
+  
 );
 
 module.exports = Comment;
