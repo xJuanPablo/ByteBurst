@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS byteburst_db;
-CREATE DATABASE byteburst_db;
+DROP DATABASE IF EXISTS blogposts_db;
+CREATE DATABASE blogposts_db;
