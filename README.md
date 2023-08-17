@@ -4,6 +4,8 @@
 ## Description
 Dive into the dynamic world of technology with byteBurst, your gateway to a community of tech enthusiasts. Seamlessly log on and embark on a journey of knowledge sharing and creativity. With byteBurst, you hold the power to create, curate, and communicate your tech insights through personalized posts.
 
+Expect major updates soon!
+
 ## Table of Contents
   * [Demo](#demo)
   * [Installation](#installation)
@@ -16,15 +18,21 @@ Dive into the dynamic world of technology with byteBurst, your gateway to a comm
 
 ## Demo
 
+Check the video below to see the website in action 👇🏼👇🏼👇🏼
+
+https://github.com/xJuanPablo/ByteBurst/assets/135268267/ddc1ec13-11a6-455f-9e55-8103553e1fdf
+
+
+
 ## Installation
 
 To install this web application, follow these steps:
 
 1. ```git clone``` the application to your local work environment.
 
-2. In the terminal, run the command ```npm i``` to install all of the applications dependencies.
+2. In the terminal, run the command ```npm i``` to install all of the application's dependencies.
 
-3. This application does use ```dotenv``` to secure any sensitive, so in ```config/connection.js``` make sure to insert your own user information and your own port. The data base name can be found in ```db/schema.sql```
+3. This application does use ```dotenv``` to secure any sensitive, so in ```config/connection.js``` make sure to insert your own user information and your own port. The database name can be found in ```db/schema.sql```
 
 
 ## Usage
